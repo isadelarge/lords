@@ -98,6 +98,8 @@ def foto(p, n, mini=False):
 # 0 = topo (ou esquerda, em foto larga), 0.5 = centro, 1 = base (ou direita).
 
 RAZAO_PREVIA = 1200 / 630
+# prévia da home e do catálogo geral: arte no estilo do hero, exportada por previa.py
+PREVIA_HOME = 'assets/previa/home.jpg'
 
 
 def previa(p):
@@ -193,7 +195,7 @@ def gerar_home():
 
     ctx = ctx_pagina('', 'Lord’s Planejados · Móveis planejados em Londrina',
                      'Móveis planejados sob medida em Londrina e região. Cozinhas, dormitórios, salas, banheiros e ambientes comerciais, com visita e medição sem custo e parcelamento em até 18x.',
-                     'assets/og.jpg', '', eh_home=True)
+                     PREVIA_HOME, '', eh_home=True)
     ctx.update({
         'header_classe': 'header--over',
         'preload': '<link rel="preload" as="image" href="assets/fotos/dormitorios/grafite-cabeceira-1.jpg">',
@@ -218,7 +220,7 @@ def gerar_catalogos():
     paginas = [('projetos.html', 'todos', 'Projetos entregues', 'Projetos',
                 'Ambientes que a Lord’s projetou e montou em Londrina e região. Escolha um projeto para ver todas as fotos.',
                 ORDEM_TODOS, 'Projetos · Lord’s Planejados',
-                'Projetos de móveis planejados entregues pela Lord’s em Londrina e região.', 'assets/og.jpg')]
+                'Projetos de móveis planejados entregues pela Lord’s em Londrina e região.', PREVIA_HOME)]
     for a in DADOS['ambientes']:
         lista = [p for p in PROJETOS if p['ambiente']['slug'] == a['slug']]
         paginas.append((f"{a['slug']}.html", a['slug'], a['nome'], 'Projetos',
@@ -328,7 +330,7 @@ def gerar_atendimento():
         projetos.append(linha(img(foto(p, 1, mini=True), '', classe='row__thumb'), p['rotulo'], p['titulo'],
                               f"projeto/{p['slug']}.html", f"Veja este projeto da Lord’s Planejados, {p['titulo'].lower()}:",
                               f"{p['titulo']} {p['rotulo']} {p['ambiente']['nome']} {p['texto']}"))
-    ctx = ctx_pagina('', 'Área de atendimento · Lord’s Planejados', 'Links prontos para a equipe enviar aos clientes.', 'assets/og.jpg', 'atendimento.html')
+    ctx = ctx_pagina('', 'Área de atendimento · Lord’s Planejados', 'Links prontos para a equipe enviar aos clientes.', PREVIA_HOME, 'atendimento.html')
     ctx.update({
         'robots': '<meta name="robots" content="noindex">',
         'gerais': ''.join(gerais), 'lista_ambientes': ''.join(ambientes), 'lista_projetos': ''.join(projetos),
@@ -337,7 +339,7 @@ def gerar_atendimento():
 
 
 def gerar_404():
-    ctx = ctx_pagina('/', 'Página não encontrada · Lord’s Planejados', 'Esta página não existe ou mudou de endereço.', 'assets/og.jpg', '404.html')
+    ctx = ctx_pagina('/', 'Página não encontrada · Lord’s Planejados', 'Esta página não existe ou mudou de endereço.', PREVIA_HOME, '404.html')
     ctx.update({'robots': '<meta name="robots" content="noindex">'})
     escrever('404.html', render('404.html', ctx))
 
@@ -353,9 +355,6 @@ def gerar_sitemap():
 if __name__ == '__main__':
     for p in PROJETOS:
         previa(p)
-    # prévia da home e do catálogo geral: "home_previa" indica a foto e a posição do corte
-    hp = DADOS['home_previa']
-    cortar_previa(f"assets/fotos/{hp['foto']}.jpg", float(hp.get('posicao', 0.5)), 'assets/og.jpg')
     gerar_home()
     gerar_catalogos()
     gerar_projetos()

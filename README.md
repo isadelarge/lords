@@ -31,7 +31,15 @@ As fotos ficam em `assets/fotos/<ambiente>/` (até 1600 px) e as miniaturas em `
 
 ## Prévia do link (WhatsApp)
 
-Cada projeto tem uma imagem de prévia horizontal (1200x630) em `assets/previa/`, recortada da primeira foto. O campo `"previa"` de cada projeto em `dados/projetos.json` diz onde fica o corte: `0` pega o topo da foto, `0.5` o centro e `1` a base. As páginas de ambiente usam a prévia da foto de capa do ambiente. A home e o catálogo geral usam `assets/og.jpg`, definida em `"home_previa"` (foto e posição do corte). O gerador recria todas essas imagens a cada execução.
+A home e o catálogo geral usam uma arte no estilo do hero, desenhada em `ferramentas/previa-home.html`. Depois de mudar a arte, exporte de novo com:
+
+```bash
+python previa.py
+```
+
+O script abre a arte no Chrome sem janela e salva `assets/previa/home.jpg` em 1200x630.
+
+Cada projeto tem uma prévia horizontal (1200x630) em `assets/previa/`, recortada da primeira foto pelo gerador. O campo `"previa"` de cada projeto em `dados/projetos.json` diz onde fica o corte: `0` pega o topo da foto, `0.5` o centro e `1` a base. As páginas de ambiente usam a prévia da foto de capa do ambiente.
 
 ## Avaliações do Google
 
