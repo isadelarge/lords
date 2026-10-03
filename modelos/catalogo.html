@@ -1,0 +1,28 @@
+{{> head}}
+<body>
+
+{{> sprite}}
+
+{{> cabecalho}}
+
+<main id="conteudo">
+  <div class="wrap page-head">
+    <header class="sec-head">
+      <p class="label">{{rotulo}}</p>
+      <h1 class="h1">{{h1}}</h1>
+      <p class="sec-head__aside sec-head__text">{{texto}}</p>
+    </header>
+  </div>
+
+  <nav class="tabs" aria-label="Ambientes">
+    <div class="wrap tabs__inner">{{abas}}</div>
+  </nav>
+
+  <div class="wrap catalog">
+    <ul class="cards">{{cards}}
+    </ul>
+  </div>
+
+</main>
+
+{{> rodape}}

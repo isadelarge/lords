@@ -1,0 +1,60 @@
+{{> head}}
+<body>
+
+{{> sprite}}
+
+{{> cabecalho}}
+
+<main id="conteudo">
+  <div class="wrap project">
+    <div class="project__grid">
+      <div class="project__gallery">
+        <div class="project__photos" data-carousel role="region" aria-label="Fotos do projeto" tabindex="0">
+          {{galeria}}
+        </div>
+        {{indicadores}}
+      </div>
+
+      <div class="project__info">
+        <header class="project__head">
+          <nav class="crumbs" aria-label="Você está em">
+            <a href="../projetos.html">Projetos</a>
+            <span aria-hidden="true">/</span>
+            <a href="../{{amb_slug}}.html">{{amb_nome}}</a>
+          </nav>
+          <p class="label">{{rotulo}}</p>
+          <h1 class="h1 project__title">{{titulo_projeto}}</h1>
+        </header>
+        <div class="project__body">
+          <p class="lead">{{texto}}</p>
+          <dl class="project__meta">
+            <div><dt>Ambiente</dt><dd>{{amb_nome}}</dd></div>
+            <div><dt>Fotos</dt><dd>{{n_fotos}}</dd></div>
+          </dl>
+          <div class="project__actions">
+            <a class="btn btn--black" href="https://wa.me/5543996042401" data-wa data-msg="{{msg}}"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg><span>Quero um projeto assim</span></a>
+            <button class="btn btn--outline" type="button" data-share data-title="{{titulo_projeto}}"><svg class="i" aria-hidden="true"><use href="#i-share"/></svg><span data-share-label>Compartilhar</span></button>
+          </div>
+          {{obra}}
+        </div>
+      </div>
+    </div>
+{{pager}}
+  </div>
+
+  <section class="sec sec--paper" aria-labelledby="rel-title">
+    <div class="wrap">
+      <header class="sec-head">
+        <p class="label">Veja também</p>
+        <h2 id="rel-title" class="h2">Outros projetos</h2>
+        <a class="link sec-head__aside" href="../{{amb_slug}}.html"><span>Todos de {{amb_nome}}</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </header>
+      <ul class="cards cards--3">{{relacionados}}
+      </ul>
+      <div class="sec-foot"><a class="link" href="../{{amb_slug}}.html"><span>Todos de {{amb_nome}}</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+    </div>
+  </section>
+
+</main>
+
+{{> rodape}}

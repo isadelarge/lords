@@ -1,0 +1,246 @@
+{
+  "_leia": "Fonte dos projetos do site. Depois de editar, rode: python gerar.py",
+  "site": "",
+  "whatsapp": "5543996042401",
+  "home_destaques": [
+    "grafite-gourmet",
+    "verde-amadeirado",
+    "azul-petroleo",
+    "painel-led"
+  ],
+  "destaque": [
+    "grafite-gourmet",
+    "painel-led",
+    "azul-petroleo",
+    "verde-amadeirado",
+    "sala-reuniao",
+    "infantil-nuvem",
+    "azul-nichos",
+    "painel-forro-madeira",
+    "grafite-cabeceira",
+    "cinza-torre",
+    "clinica",
+    "ripado-aparador"
+  ],
+  "ambientes": [
+    {
+      "slug": "cozinhas",
+      "nome": "Cozinhas",
+      "rotulo": "Cozinha",
+      "projetos": [
+        {
+          "slug": "grafite-gourmet",
+          "fotos": 3,
+          "rotulo": "Área gourmet",
+          "titulo": "Área gourmet grafite com churrasqueira",
+          "texto": "Armários grafite com nichos abertos, gaveteiros sob a bancada de granito e fita de LED que aquece o ambiente à noite."
+        },
+        {
+          "slug": "verde-amadeirado",
+          "fotos": 4,
+          "titulo": "Cozinha verde com amadeirado",
+          "texto": "Portas em verde com estrutura amadeirada, LED embutido sob os aéreos e nicho para garrafas sobre a passagem."
+        },
+        {
+          "slug": "azul-nichos",
+          "fotos": 3,
+          "titulo": "Cozinha azul com nichos iluminados",
+          "texto": "Armários em azul acinzentado com nichos iluminados, torre para forno e micro-ondas e bancada de apoio com frente ripada."
+        },
+        {
+          "slug": "cinza-torre",
+          "fotos": 4,
+          "titulo": "Cozinha cinza em L com torre quente",
+          "texto": "Portas lisas em cinza, torre para forno e micro-ondas e LED sob os aéreos. A bancada de granito preto termina numa prateleira arredondada."
+        },
+        {
+          "slug": "grafite-espelho",
+          "fotos": 2,
+          "titulo": "Cozinha grafite com armário espelhado",
+          "texto": "Armários grafite em L e um armário alto com portas de correr espelhadas, que amplia o ambiente."
+        },
+        {
+          "slug": "fendi-granito",
+          "fotos": 2,
+          "titulo": "Cozinha clara com torre quente",
+          "texto": "Gavetas e portas em tom claro com puxador perfil, torre para forno e micro-ondas e prateleira amadeirada sobre a janela."
+        },
+        {
+          "slug": "linear-clara",
+          "fotos": 2,
+          "titulo": "Cozinha linear com espaço para lavadora",
+          "texto": "Armários claros com detalhes amadeirados, nicho para a geladeira e a lavadora integrada à bancada."
+        },
+        {
+          "slug": "grafite-lavanderia",
+          "fotos": 2,
+          "titulo": "Cozinha grafite com lavanderia integrada",
+          "texto": "Armários grafite, nicho amadeirado para o micro-ondas e espaço para a máquina de lavar sob a bancada de granito."
+        },
+        {
+          "slug": "cinza-coluna",
+          "fotos": 1,
+          "titulo": "Cozinha em L com coluna amadeirada",
+          "texto": "Armários cinza com micro-ondas embutido, cooktop na bancada clara e uma coluna amadeirada que emoldura a entrada."
+        },
+        {
+          "slug": "cinza-adega",
+          "fotos": 1,
+          "obra": "apto-b",
+          "titulo": "Cozinha cinza com adega em X",
+          "texto": "Armários cinza, bancada de granito preto e uma adega amadeirada em X na ponta dos aéreos."
+        },
+        {
+          "slug": "verde-integrada",
+          "fotos": 2,
+          "obra": "apto-a",
+          "titulo": "Cozinha verde integrada à sala",
+          "texto": "Armários verdes com estrutura amadeirada, adega em X e nicho para a geladeira, abertos para a sala do apartamento."
+        }
+      ],
+      "capa": "azul-nichos-1",
+      "frase": "Cozinhas planejadas"
+    },
+    {
+      "slug": "dormitorios",
+      "nome": "Dormitórios",
+      "rotulo": "Dormitório",
+      "projetos": [
+        {
+          "slug": "grafite-cabeceira",
+          "fotos": 2,
+          "titulo": "Quarto com guarda-roupa e cabeceira amadeirada",
+          "texto": "Guarda-roupa grafite, painel amadeirado na cabeceira com ponte de portas ripadas e criados-mudos com LED."
+        },
+        {
+          "slug": "azul-petroleo",
+          "fotos": 3,
+          "titulo": "Guarda-roupa azul petróleo de correr",
+          "texto": "Portas de correr em azul petróleo com perfil dourado, interior branco com cabideiro e gavetas e criado-mudo no mesmo tom."
+        },
+        {
+          "slug": "infantil-nuvem",
+          "fotos": 2,
+          "titulo": "Quarto infantil com cabeceira de nuvem",
+          "texto": "Cabeceira recortada em nuvem com LED por trás, prateleira suspensa e criado-mudo com nicho e gavetas."
+        },
+        {
+          "slug": "casal-espelho",
+          "fotos": 1,
+          "titulo": "Quarto de casal com porta espelhada",
+          "texto": "Guarda-roupa de correr do piso ao teto em tom areia, com uma das portas espelhada para ampliar o quarto."
+        },
+        {
+          "slug": "correr-cinza",
+          "fotos": 2,
+          "obra": "apto-b",
+          "titulo": "Guarda-roupa de correr com moldura amadeirada",
+          "texto": "Portas cinza com perfil escuro, moldura amadeirada e um vão central de prateleiras abertas."
+        },
+        {
+          "slug": "amadeirado-janela",
+          "fotos": 1,
+          "obra": "apto-a",
+          "titulo": "Quarto com guarda-roupa amadeirado",
+          "texto": "Guarda-roupa em amadeirado claro e armário alto ao lado da janela, no mesmo acabamento."
+        }
+      ],
+      "capa": "infantil-nuvem-1",
+      "frase": "Dormitórios planejados"
+    },
+    {
+      "slug": "salas",
+      "nome": "Salas e painéis",
+      "rotulo": "Sala",
+      "projetos": [
+        {
+          "slug": "painel-led",
+          "fotos": 3,
+          "rotulo": "Painel",
+          "titulo": "Painel ripado com moldura iluminada",
+          "texto": "Ripado amadeirado do piso ao teto, moldura branca para a TV com LED por trás e rack suspenso com gavetas."
+        },
+        {
+          "slug": "painel-forro-madeira",
+          "fotos": 3,
+          "rotulo": "Painel",
+          "titulo": "Painel amadeirado na sala de jantar",
+          "texto": "Painel de parede inteira para a TV, no mesmo tom amadeirado do forro e da mesa."
+        },
+        {
+          "slug": "ripado-aparador",
+          "fotos": 2,
+          "rotulo": "Painel",
+          "titulo": "Painel ripado com aparador suspenso",
+          "texto": "Ripado amadeirado com um aparador suspenso de cantos arredondados em tom areia."
+        },
+        {
+          "slug": "painel-rack",
+          "fotos": 2,
+          "obra": "apto-a",
+          "titulo": "Painel de TV e ripado na entrada",
+          "texto": "Painel amadeirado com rack e prateleira para a TV e um ripado no hall de entrada do apartamento."
+        },
+        {
+          "slug": "ripado-integrado",
+          "fotos": 1,
+          "rotulo": "Painel",
+          "titulo": "Parede ripada em amadeirado escuro",
+          "texto": "Ripado que acompanha a sala integrada até o corredor, emoldurando as portas."
+        },
+        {
+          "slug": "bancada-ripado",
+          "fotos": 1,
+          "obra": "apto-b",
+          "titulo": "Bancada suspensa com ripado",
+          "texto": "Bancada cinza suspensa com prateleira inferior e um painel ripado ao lado da janela."
+        }
+      ],
+      "capa": "ripado-aparador-1",
+      "frase": "Salas e painéis planejados"
+    },
+    {
+      "slug": "banheiros",
+      "nome": "Banheiros",
+      "rotulo": "Banheiro",
+      "projetos": [
+        {
+          "slug": "nicho-amadeirado",
+          "fotos": 2,
+          "obra": "apto-a",
+          "titulo": "Banheiro com nicho amadeirado",
+          "texto": "Gabinete claro sob a cuba e nicho amadeirado aberto ao lado do espelho, para toalhas e objetos do dia a dia."
+        }
+      ],
+      "capa": "nicho-amadeirado-1",
+      "frase": "Banheiros planejados"
+    },
+    {
+      "slug": "comercial",
+      "nome": "Comercial",
+      "rotulo": "Comercial",
+      "projetos": [
+        {
+          "slug": "sala-reuniao",
+          "fotos": 3,
+          "titulo": "Sala de reunião com painel amadeirado",
+          "texto": "Paredes revestidas em amadeirado escuro, mesa grafite, armários aéreos pretos e frisos de LED nas paredes."
+        },
+        {
+          "slug": "clinica",
+          "fotos": 7,
+          "titulo": "Clínica com recepção, consultório e copa",
+          "texto": "Painel amadeirado e mesa de atendimento na recepção, balcão de frente ripada, estante aberta e copa com banco e mesa."
+        },
+        {
+          "slug": "igreja",
+          "fotos": 2,
+          "titulo": "Painel ripado e balcão para igreja",
+          "texto": "Parede ripada amadeirada com LED entre as ripas e balcão com tampo de granito."
+        }
+      ],
+      "capa": "clinica-1",
+      "frase": "Ambientes comerciais planejados"
+    }
+  ]
+}

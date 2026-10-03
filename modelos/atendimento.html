@@ -1,0 +1,46 @@
+{{> head}}
+<body>
+
+{{> sprite}}
+
+{{> cabecalho}}
+
+<main id="conteudo">
+  <div class="wrap page-head">
+    <header class="sec-head">
+      <p class="label">Área de atendimento</p>
+      <h1 class="h1">Links para enviar aos clientes</h1>
+      <p class="sec-head__aside sec-head__text">Toque em Enviar para abrir o WhatsApp com a mensagem pronta e escolher o contato, ou em Copiar link para colar onde quiser.</p>
+    </header>
+  </div>
+
+  <div class="wrap staff">
+    <label class="search">
+      <svg class="i" aria-hidden="true"><use href="#i-search"/></svg>
+      <span class="visually-hidden">Buscar</span>
+      <input type="search" placeholder="Buscar por ambiente, cor ou acabamento" autocomplete="off" data-busca-campo>
+    </label>
+
+    <section class="staff__group" data-grupo>
+      <h2 class="staff__title label">Páginas gerais</h2>
+      <ul class="rows">{{gerais}}
+      </ul>
+    </section>
+
+    <section class="staff__group" data-grupo>
+      <h2 class="staff__title label">Ambientes</h2>
+      <ul class="rows">{{lista_ambientes}}
+      </ul>
+    </section>
+
+    <section class="staff__group" data-grupo>
+      <h2 class="staff__title label">Projetos</h2>
+      <ul class="rows">{{lista_projetos}}
+      </ul>
+    </section>
+
+    <p class="staff__vazio" data-busca-vazio hidden>Nenhum resultado. Tente outra palavra, como “cozinha” ou “ripado”.</p>
+  </div>
+</main>
+
+{{> rodape}}

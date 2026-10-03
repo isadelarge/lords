@@ -1,0 +1,205 @@
+{{> head}}
+<body>
+
+{{> sprite}}
+
+{{> cabecalho}}
+
+<main id="conteudo">
+
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__slides" data-slides>
+      <figure class="slide is-active" data-slide>
+        <img src="assets/fotos/dormitorios/grafite-cabeceira-1.jpg" alt="Quarto com guarda-roupa grafite, painel amadeirado na cabeceira e criados-mudos iluminados" width="1201" height="901" fetchpriority="high" style="--pos: 50% 55%">
+      </figure>
+      <figure class="slide" data-slide>
+        <img src="assets/fotos/salas/painel-forro-madeira-1.jpg" alt="Sala de jantar com painel amadeirado de parede inteira para a TV e forro de madeira" width="1200" height="1500" loading="lazy" style="--pos: 50% 45%">
+      </figure>
+      <figure class="slide" data-slide>
+        <img src="assets/fotos/comercial/sala-reuniao-2.jpg" alt="Sala de reunião com paredes amadeiradas, mesa grafite e frisos de LED" width="1200" height="1600" loading="lazy" style="--pos: 50% 50%">
+      </figure>
+      <figure class="slide" data-slide>
+        <img src="assets/fotos/cozinhas/cinza-torre-1.jpg" alt="Cozinha cinza em L com torre para forno e micro-ondas e bancada de granito preto" width="1200" height="1200" loading="lazy" style="--pos: 50% 55%">
+      </figure>
+    </div>
+
+    <div class="hero__content wrap">
+      <p class="label label--light load" style="--d:0">Móveis planejados · Londrina e região</p>
+      <h1 id="hero-title" class="hero__title load" style="--d:1">Planejados que unem <em>beleza, conforto e funcionalidade.</em></h1>
+      <p class="hero__lead load" style="--d:2">Organização que acolhe, design que inspira e qualidade que faz a diferença todos os dias.</p>
+      <div class="hero__actions load" style="--d:3">
+        <a class="btn btn--white hero__cta" href="https://wa.me/5543996042401" data-wa><span>Solicite seu orçamento</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--outline-white" href="projetos.html"><span>Ver projetos</span></a>
+      </div>
+    </div>
+
+    <div class="hero__foot wrap">
+      <a class="hero__scroll" href="#ambientes">Role para descobrir</a>
+      <div class="hero__count" aria-hidden="true">
+        <span data-slide-num>01</span>
+        <span class="hero__bar"><i data-slide-bar></i></span>
+        <span>04</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ambientes -->
+  <section class="sec" id="ambientes" aria-labelledby="ambientes-title">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="label">Ambientes</p>
+        <h2 id="ambientes-title" class="h2">Escolha o ambiente e veja o que já entregamos.</h2>
+        <a class="link sec-head__aside" href="projetos.html"><span>Todos os projetos</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </header>
+      <ul class="rooms reveal">{{ambientes}}
+      </ul>
+      <div class="sec-foot"><a class="link" href="projetos.html"><span>Todos os projetos</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+    </div>
+  </section>
+
+  <!-- Projetos em destaque -->
+  <section class="sec sec--black" aria-labelledby="destaques-title">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="label label--light">Projetos em destaque</p>
+        <h2 id="destaques-title" class="h2">Cada projeto nasce das medidas e da rotina de quem vai usar.</h2>
+        <a class="link sec-head__aside" href="projetos.html"><span>Ver todos</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </header>
+      <ul class="feat">{{destaques}}
+      </ul>
+      <div class="sec-foot"><a class="link" href="projetos.html"><span>Ver todos os projetos</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+    </div>
+  </section>
+
+  <!-- Como funciona -->
+  <section class="sec" id="como-funciona" aria-labelledby="como-title">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <p class="label">Como funciona</p>
+        <h2 id="como-title" class="h2">Do primeiro contato à montagem, sem complicação.</h2>
+      </header>
+      <ol class="steps reveal">
+        <li class="step">
+          <span class="step__n">01</span>
+          <h3 class="step__title">Visita e medição</h3>
+          <p>Vamos até você sem custo, medimos o ambiente e entendemos como você usa o espaço.</p>
+        </li>
+        <li class="step">
+          <span class="step__n">02</span>
+          <h3 class="step__title">Projeto</h3>
+          <p>Desenhamos a solução com você e escolhemos juntos materiais, cores e acabamentos.</p>
+        </li>
+        <li class="step">
+          <span class="step__n">03</span>
+          <h3 class="step__title">Aprovação</h3>
+          <p>Você aprova o projeto e escolhe como pagar: Pix, cartão de débito ou crédito em até 18x.</p>
+        </li>
+        <li class="step">
+          <span class="step__n">04</span>
+          <h3 class="step__title">Fabricação e montagem</h3>
+          <p>Os móveis são produzidos sob medida e montados no local, dentro do prazo combinado.</p>
+        </li>
+      </ol>
+      <div class="steps__cta reveal">
+        <a class="btn btn--black" href="https://wa.me/5543996042401" data-wa data-msg="Olá! Gostaria de agendar uma visita para medição."><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg><span>Agendar visita sem custo</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Arquitetos -->
+  <section class="sec sec--paper" id="arquitetos" aria-labelledby="arquitetos-title">
+    <div class="wrap split">
+      <figure class="split__media reveal">{{img_arquitetos}}</figure>
+      <div class="split__text reveal">
+        <p class="label">Para arquitetos e designers</p>
+        <h2 id="arquitetos-title" class="h2">Tem um projeto de interiores? A gente orça e executa a marcenaria.</h2>
+        <p class="lead">Envie o projeto pelo WhatsApp para receber o orçamento. A medição na obra é feita sem custo.</p>
+        <a class="btn btn--black" href="https://wa.me/5543996042401" data-wa data-msg="Olá! Sou arquiteto(a) ou designer de interiores e gostaria de enviar um projeto para orçamento."><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg><span>Enviar projeto</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avaliações -->
+  <section class="sec" id="avaliacoes" aria-labelledby="avaliacoes-title">
+    <div class="wrap">
+      <div class="reviews reveal">
+        <h2 id="avaliacoes-title" class="label">Avaliações</h2>
+        <figure class="reviews__quote">
+          <blockquote><p>“Ótima qualidade! Cumprem os prazos, serviços excelentes!”</p></blockquote>
+          <figcaption>Jheo Rocha · avaliação no Google</figcaption>
+        </figure>
+        <div class="reviews__score">
+          <p class="reviews__num">5,0</p>
+          <p class="reviews__stars" aria-label="5 de 5 estrelas"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><svg class="i" aria-hidden="true"><use href="#i-star"/></svg><svg class="i" aria-hidden="true"><use href="#i-star"/></svg></p>
+          <p class="reviews__text">Nota máxima nas 3 avaliações de clientes no Google.</p>
+          <a class="link" href="https://www.google.com/maps?cid=9370535114860761498" target="_blank" rel="noopener"><span>Ver no Google</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato e dúvidas -->
+  <section class="sec sec--paper" id="contato" aria-labelledby="contato-title">
+    <div class="wrap contact">
+      <div class="contact__info reveal">
+        <p class="label">Contato</p>
+        <h2 id="contato-title" class="h2">Vamos conversar sobre o seu espaço.</h2>
+        <p class="lead">Chame no WhatsApp e conte qual ambiente quer planejar. Se tiver fotos ou medidas aproximadas, mande junto.</p>
+        <a class="btn btn--black" href="https://wa.me/5543996042401" data-wa><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg><span>Conversar no WhatsApp</span></a>
+        <dl class="facts">
+          <div class="facts__row">
+            <dt>Endereço</dt>
+            <dd>R. Gregório de Souza Vacário, 660<br>Padovani, Londrina, PR, 86082-590<br><a href="https://www.google.com/maps?cid=9370535114860761498" target="_blank" rel="noopener">Como chegar</a></dd>
+          </div>
+          <div class="facts__row">
+            <dt>Horário</dt>
+            <dd>Segunda a sexta, das 8h às 18h<br>Sábado, das 8h às 13h</dd>
+          </div>
+          <div class="facts__row">
+            <dt>Instagram</dt>
+            <dd><a href="https://www.instagram.com/lords.planejados/" target="_blank" rel="noopener">@lords.planejados</a></dd>
+          </div>
+          <div class="facts__row">
+            <dt>E-mail</dt>
+            <dd><a href="mailto:marcosgabrielplanejados@gmail.com">marcosgabrielplanejados@gmail.com</a></dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="contact__faq reveal" id="duvidas">
+        <p class="label">Dúvidas</p>
+        <h2 class="h2">Perguntas frequentes</h2>
+        <div class="faq">
+          <details class="qa" open>
+            <summary><span>A visita para medir o ambiente é cobrada?</span><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <div class="qa__body"><p>Não. Vamos até você sem custo, fazemos a medição, avaliamos o espaço e ajudamos a escolher a melhor solução para o seu dia a dia.</p></div>
+          </details>
+          <details class="qa">
+            <summary><span>Quais são as formas de pagamento?</span><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <div class="qa__body"><p>Aceitamos Pix, cartão de débito e cartão de crédito, com parcelamento em até 18x.</p></div>
+          </details>
+          <details class="qa">
+            <summary><span>Vocês atendem fora de Londrina?</span><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <div class="qa__body"><p>Atendemos Londrina e região. Conte pelo WhatsApp onde fica o imóvel e confirmamos a visita.</p></div>
+          </details>
+          <details class="qa">
+            <summary><span>Vocês executam projetos de arquitetos?</span><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <div class="qa__body"><p>Sim. Envie o projeto pelo WhatsApp para receber o orçamento, com medição na obra sem custo.</p></div>
+          </details>
+          <details class="qa">
+            <summary><span>Fazem móveis para empresas e consultórios?</span><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <div class="qa__body"><p>Sim. Já entregamos recepções, consultórios, copas e salas de reunião, além de projetos residenciais completos.</p></div>
+          </details>
+          <details class="qa">
+            <summary><span>Posso planejar só um ambiente?</span><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <div class="qa__body"><p>Pode. Fazemos desde um painel de TV ou um guarda-roupa até o apartamento inteiro, sempre sob medida.</p></div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+{{> rodape}}

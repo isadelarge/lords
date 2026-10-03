@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.claude/
+__pycache__/
+*.log
+
+# originais baixados do Instagram; o site usa as versões tratadas em assets/fotos/
+Nova pasta/
