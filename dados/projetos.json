@@ -2,6 +2,10 @@
   "_leia": "Fonte dos projetos do site. Depois de editar, rode: python gerar.py",
   "site": "",
   "whatsapp": "5543996042401",
+  "home_previa": {
+    "foto": "comercial/sala-reuniao-2",
+    "posicao": 0.6
+  },
   "home_destaques": [
     "grafite-gourmet",
     "verde-amadeirado",
@@ -33,69 +37,80 @@
           "fotos": 3,
           "rotulo": "Área gourmet",
           "titulo": "Área gourmet grafite com churrasqueira",
-          "texto": "Armários grafite com nichos abertos, gaveteiros sob a bancada de granito e fita de LED que aquece o ambiente à noite."
+          "texto": "Armários grafite com nichos abertos, gaveteiros sob a bancada de granito e fita de LED que aquece o ambiente à noite.",
+          "previa": 0.5
         },
         {
           "slug": "verde-amadeirado",
           "fotos": 4,
           "titulo": "Cozinha verde com amadeirado",
-          "texto": "Portas em verde com estrutura amadeirada, LED embutido sob os aéreos e nicho para garrafas sobre a passagem."
+          "texto": "Portas em verde com estrutura amadeirada, LED embutido sob os aéreos e nicho para garrafas sobre a passagem.",
+          "previa": 0.5
         },
         {
           "slug": "azul-nichos",
           "fotos": 3,
           "titulo": "Cozinha azul com nichos iluminados",
-          "texto": "Armários em azul acinzentado com nichos iluminados, torre para forno e micro-ondas e bancada de apoio com frente ripada."
+          "texto": "Armários em azul acinzentado com nichos iluminados, torre para forno e micro-ondas e bancada de apoio com frente ripada.",
+          "previa": 0.5
         },
         {
           "slug": "cinza-torre",
           "fotos": 4,
           "titulo": "Cozinha cinza em L com torre quente",
-          "texto": "Portas lisas em cinza, torre para forno e micro-ondas e LED sob os aéreos. A bancada de granito preto termina numa prateleira arredondada."
+          "texto": "Portas lisas em cinza, torre para forno e micro-ondas e LED sob os aéreos. A bancada de granito preto termina numa prateleira arredondada.",
+          "previa": 0.25
         },
         {
           "slug": "grafite-espelho",
           "fotos": 2,
           "titulo": "Cozinha grafite com armário espelhado",
-          "texto": "Armários grafite em L e um armário alto com portas de correr espelhadas, que amplia o ambiente."
+          "texto": "Armários grafite em L e um armário alto com portas de correr espelhadas, que amplia o ambiente.",
+          "previa": 0.5
         },
         {
           "slug": "fendi-granito",
           "fotos": 2,
           "titulo": "Cozinha clara com torre quente",
-          "texto": "Gavetas e portas em tom claro com puxador perfil, torre para forno e micro-ondas e prateleira amadeirada sobre a janela."
+          "texto": "Gavetas e portas em tom claro com puxador perfil, torre para forno e micro-ondas e prateleira amadeirada sobre a janela.",
+          "previa": 0.5
         },
         {
           "slug": "linear-clara",
           "fotos": 2,
           "titulo": "Cozinha linear com espaço para lavadora",
-          "texto": "Armários claros com detalhes amadeirados, nicho para a geladeira e a lavadora integrada à bancada."
+          "texto": "Armários claros com detalhes amadeirados, nicho para a geladeira e a lavadora integrada à bancada.",
+          "previa": 0.5
         },
         {
           "slug": "grafite-lavanderia",
           "fotos": 2,
           "titulo": "Cozinha grafite com lavanderia integrada",
-          "texto": "Armários grafite, nicho amadeirado para o micro-ondas e espaço para a máquina de lavar sob a bancada de granito."
+          "texto": "Armários grafite, nicho amadeirado para o micro-ondas e espaço para a máquina de lavar sob a bancada de granito.",
+          "previa": 0.5
         },
         {
           "slug": "cinza-coluna",
           "fotos": 1,
           "titulo": "Cozinha em L com coluna amadeirada",
-          "texto": "Armários cinza com micro-ondas embutido, cooktop na bancada clara e uma coluna amadeirada que emoldura a entrada."
+          "texto": "Armários cinza com micro-ondas embutido, cooktop na bancada clara e uma coluna amadeirada que emoldura a entrada.",
+          "previa": 0.5
         },
         {
           "slug": "cinza-adega",
           "fotos": 1,
           "obra": "apto-b",
           "titulo": "Cozinha cinza com adega em X",
-          "texto": "Armários cinza, bancada de granito preto e uma adega amadeirada em X na ponta dos aéreos."
+          "texto": "Armários cinza, bancada de granito preto e uma adega amadeirada em X na ponta dos aéreos.",
+          "previa": 0.5
         },
         {
           "slug": "verde-integrada",
           "fotos": 2,
           "obra": "apto-a",
           "titulo": "Cozinha verde integrada à sala",
-          "texto": "Armários verdes com estrutura amadeirada, adega em X e nicho para a geladeira, abertos para a sala do apartamento."
+          "texto": "Armários verdes com estrutura amadeirada, adega em X e nicho para a geladeira, abertos para a sala do apartamento.",
+          "previa": 0.25
         }
       ],
       "capa": "azul-nichos-1",
@@ -110,39 +125,45 @@
           "slug": "grafite-cabeceira",
           "fotos": 2,
           "titulo": "Quarto com guarda-roupa e cabeceira amadeirada",
-          "texto": "Guarda-roupa grafite, painel amadeirado na cabeceira com ponte de portas ripadas e criados-mudos com LED."
+          "texto": "Guarda-roupa grafite, painel amadeirado na cabeceira com ponte de portas ripadas e criados-mudos com LED.",
+          "previa": 0.5
         },
         {
           "slug": "azul-petroleo",
           "fotos": 3,
           "titulo": "Guarda-roupa azul petróleo de correr",
-          "texto": "Portas de correr em azul petróleo com perfil dourado, interior branco com cabideiro e gavetas e criado-mudo no mesmo tom."
+          "texto": "Portas de correr em azul petróleo com perfil dourado, interior branco com cabideiro e gavetas e criado-mudo no mesmo tom.",
+          "previa": 0.25
         },
         {
           "slug": "infantil-nuvem",
           "fotos": 2,
           "titulo": "Quarto infantil com cabeceira de nuvem",
-          "texto": "Cabeceira recortada em nuvem com LED por trás, prateleira suspensa e criado-mudo com nicho e gavetas."
+          "texto": "Cabeceira recortada em nuvem com LED por trás, prateleira suspensa e criado-mudo com nicho e gavetas.",
+          "previa": 0.5
         },
         {
           "slug": "casal-espelho",
           "fotos": 1,
           "titulo": "Quarto de casal com porta espelhada",
-          "texto": "Guarda-roupa de correr do piso ao teto em tom areia, com uma das portas espelhada para ampliar o quarto."
+          "texto": "Guarda-roupa de correr do piso ao teto em tom areia, com uma das portas espelhada para ampliar o quarto.",
+          "previa": 0.5
         },
         {
           "slug": "correr-cinza",
           "fotos": 2,
           "obra": "apto-b",
           "titulo": "Guarda-roupa de correr com moldura amadeirada",
-          "texto": "Portas cinza com perfil escuro, moldura amadeirada e um vão central de prateleiras abertas."
+          "texto": "Portas cinza com perfil escuro, moldura amadeirada e um vão central de prateleiras abertas.",
+          "previa": 0.25
         },
         {
           "slug": "amadeirado-janela",
           "fotos": 1,
           "obra": "apto-a",
           "titulo": "Quarto com guarda-roupa amadeirado",
-          "texto": "Guarda-roupa em amadeirado claro e armário alto ao lado da janela, no mesmo acabamento."
+          "texto": "Guarda-roupa em amadeirado claro e armário alto ao lado da janela, no mesmo acabamento.",
+          "previa": 0.25
         }
       ],
       "capa": "infantil-nuvem-1",
@@ -158,42 +179,48 @@
           "fotos": 3,
           "rotulo": "Painel",
           "titulo": "Painel ripado com moldura iluminada",
-          "texto": "Ripado amadeirado do piso ao teto, moldura branca para a TV com LED por trás e rack suspenso com gavetas."
+          "texto": "Ripado amadeirado do piso ao teto, moldura branca para a TV com LED por trás e rack suspenso com gavetas.",
+          "previa": 0.5
         },
         {
           "slug": "painel-forro-madeira",
           "fotos": 3,
           "rotulo": "Painel",
           "titulo": "Painel amadeirado na sala de jantar",
-          "texto": "Painel de parede inteira para a TV, no mesmo tom amadeirado do forro e da mesa."
+          "texto": "Painel de parede inteira para a TV, no mesmo tom amadeirado do forro e da mesa.",
+          "previa": 0.5
         },
         {
           "slug": "ripado-aparador",
           "fotos": 2,
           "rotulo": "Painel",
           "titulo": "Painel ripado com aparador suspenso",
-          "texto": "Ripado amadeirado com um aparador suspenso de cantos arredondados em tom areia."
+          "texto": "Ripado amadeirado com um aparador suspenso de cantos arredondados em tom areia.",
+          "previa": 0.75
         },
         {
           "slug": "painel-rack",
           "fotos": 2,
           "obra": "apto-a",
           "titulo": "Painel de TV e ripado na entrada",
-          "texto": "Painel amadeirado com rack e prateleira para a TV e um ripado no hall de entrada do apartamento."
+          "texto": "Painel amadeirado com rack e prateleira para a TV e um ripado no hall de entrada do apartamento.",
+          "previa": 0.75
         },
         {
           "slug": "ripado-integrado",
           "fotos": 1,
           "rotulo": "Painel",
           "titulo": "Parede ripada em amadeirado escuro",
-          "texto": "Ripado que acompanha a sala integrada até o corredor, emoldurando as portas."
+          "texto": "Ripado que acompanha a sala integrada até o corredor, emoldurando as portas.",
+          "previa": 0.75
         },
         {
           "slug": "bancada-ripado",
           "fotos": 1,
           "obra": "apto-b",
           "titulo": "Bancada suspensa com ripado",
-          "texto": "Bancada cinza suspensa com prateleira inferior e um painel ripado ao lado da janela."
+          "texto": "Bancada cinza suspensa com prateleira inferior e um painel ripado ao lado da janela.",
+          "previa": 0.62
         }
       ],
       "capa": "ripado-aparador-1",
@@ -209,7 +236,8 @@
           "fotos": 2,
           "obra": "apto-a",
           "titulo": "Banheiro com nicho amadeirado",
-          "texto": "Gabinete claro sob a cuba e nicho amadeirado aberto ao lado do espelho, para toalhas e objetos do dia a dia."
+          "texto": "Gabinete claro sob a cuba e nicho amadeirado aberto ao lado do espelho, para toalhas e objetos do dia a dia.",
+          "previa": 0.25
         }
       ],
       "capa": "nicho-amadeirado-1",
@@ -224,19 +252,22 @@
           "slug": "sala-reuniao",
           "fotos": 3,
           "titulo": "Sala de reunião com painel amadeirado",
-          "texto": "Paredes revestidas em amadeirado escuro, mesa grafite, armários aéreos pretos e frisos de LED nas paredes."
+          "texto": "Paredes revestidas em amadeirado escuro, mesa grafite, armários aéreos pretos e frisos de LED nas paredes.",
+          "previa": 0.25
         },
         {
           "slug": "clinica",
           "fotos": 7,
           "titulo": "Clínica com recepção, consultório e copa",
-          "texto": "Painel amadeirado e mesa de atendimento na recepção, balcão de frente ripada, estante aberta e copa com banco e mesa."
+          "texto": "Painel amadeirado e mesa de atendimento na recepção, balcão de frente ripada, estante aberta e copa com banco e mesa.",
+          "previa": 0.5
         },
         {
           "slug": "igreja",
           "fotos": 2,
           "titulo": "Painel ripado e balcão para igreja",
-          "texto": "Parede ripada amadeirada com LED entre as ripas e balcão com tampo de granito."
+          "texto": "Parede ripada amadeirada com LED entre as ripas e balcão com tampo de granito.",
+          "previa": 0.25
         }
       ],
       "capa": "clinica-1",

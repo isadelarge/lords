@@ -93,6 +93,34 @@ def foto(p, n, mini=False):
     return f"{pasta}/{p['slug']}-{n}.jpg"
 
 
+# ---------- prévia do link (WhatsApp, redes) ----------
+# Corte horizontal 1200x630 da capa de cada projeto. "previa" no JSON é a posição do corte:
+# 0 = topo (ou esquerda, em foto larga), 0.5 = centro, 1 = base (ou direita).
+
+RAZAO_PREVIA = 1200 / 630
+
+
+def previa(p):
+    return cortar_previa(foto(p, 1), float(p.get('previa', 0.5)), f"assets/previa/{p['slug']}.jpg")
+
+
+def cortar_previa(origem, pos, destino):
+    im = Image.open(origem).convert('RGB')
+    w, h = im.size
+    if w / h > RAZAO_PREVIA:
+        cw = int(h * RAZAO_PREVIA)
+        x = int((w - cw) * pos)
+        im = im.crop((x, 0, x + cw, h))
+    else:
+        ch = int(w / RAZAO_PREVIA)
+        y = int((h - ch) * pos)
+        im = im.crop((0, y, w, y + ch))
+    im = im.resize((1200, 630), Image.LANCZOS)
+    os.makedirs('assets/previa', exist_ok=True)
+    im.save(destino, 'JPEG', quality=84, optimize=True, progressive=True)
+    return destino
+
+
 def img(caminho, raiz, alt='', classe='', lazy=True, extra=''):
     w, h = tamanho(caminho)
     attrs = [f'src="{raiz}{caminho}"', f'alt="{esc(alt)}"', f'width="{w}"', f'height="{h}"', 'decoding="async"']
@@ -109,14 +137,15 @@ def abs_url(caminho):
     return f'{SITE}/{caminho}' if SITE else caminho
 
 
-def ctx_pagina(raiz, titulo, descricao, og_imagem, url, eh_home=False):
+def ctx_pagina(raiz, titulo, descricao, og_imagem, url, eh_home=False, og_alt='Projeto de móveis planejados da Lord’s Planejados'):
     return {
         'raiz': raiz,
         'inicio': (raiz or './') if not eh_home else './',
         'ancora': '' if eh_home else (raiz or './'),
         'titulo': esc(titulo),
         'descricao': esc(descricao),
-        'og_imagem': abs_url(og_imagem),
+        'og_imagem': abs_url(og_imagem) if SITE else f'{raiz}{og_imagem}',
+        'og_alt': esc(og_alt),
         'og_url': f'<meta property="og:url" content="{abs_url(url)}">' if SITE else '',
     }
 
@@ -196,7 +225,7 @@ def gerar_catalogos():
                         a.get('texto') or f"{a['frase']} sob medida que a Lord’s entregou em Londrina e região.",
                         lista, f"{a['frase']} · Lord’s Planejados",
                         f"Veja {a['frase'].lower()} sob medida pela Lord’s em Londrina e região.",
-                        foto(lista[0], 1)))
+                        f"assets/previa/{a['capa'].rsplit('-', 1)[0]}.jpg"))
     for arq, slug, h1, rotulo, texto, lista, titulo, desc, og in paginas:
         ctx = ctx_pagina('', titulo, desc, og, arq)
         ctx.update({
@@ -249,7 +278,8 @@ def gerar_projetos():
         rel += [x for x in ORDEM_TODOS if x not in rel and x['slug'] != p['slug'] and x['ambiente']['slug'] != a['slug']][:3 - len(rel)]
 
         msg = f'Olá! Vi o projeto “{p["titulo"]}” no site da Lord’s Planejados e gostaria de um orçamento para algo parecido.'
-        ctx = ctx_pagina('../', f"{p['titulo']} · Lord’s Planejados", p['texto'], foto(p, 1), f"projeto/{p['slug']}.html")
+        ctx = ctx_pagina('../', f"{p['titulo']} · Lord’s Planejados", p['texto'], f"assets/previa/{p['slug']}.jpg", f"projeto/{p['slug']}.html",
+                         og_alt=p['titulo'])
         ctx.update({
             'atual_projetos': ' aria-current="page"',
             'preload': f'<link rel="preload" as="image" href="../{foto(p, 1)}">',
@@ -321,6 +351,11 @@ def gerar_sitemap():
 
 
 if __name__ == '__main__':
+    for p in PROJETOS:
+        previa(p)
+    # prévia da home e do catálogo geral: "home_previa" indica a foto e a posição do corte
+    hp = DADOS['home_previa']
+    cortar_previa(f"assets/fotos/{hp['foto']}.jpg", float(hp.get('posicao', 0.5)), 'assets/og.jpg')
     gerar_home()
     gerar_catalogos()
     gerar_projetos()

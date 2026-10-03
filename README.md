@@ -29,6 +29,10 @@ O script recria todas as páginas e atualiza a versão dos arquivos de estilo e 
 
 As fotos ficam em `assets/fotos/<ambiente>/` (até 1600 px) e as miniaturas em `assets/fotos/<ambiente>/mini/` (800 px de largura), com o nome `<slug>-1.jpg`, `<slug>-2.jpg`... Os originais continuam em `Nova pasta/`.
 
+## Prévia do link (WhatsApp)
+
+Cada projeto tem uma imagem de prévia horizontal (1200x630) em `assets/previa/`, recortada da primeira foto. O campo `"previa"` de cada projeto em `dados/projetos.json` diz onde fica o corte: `0` pega o topo da foto, `0.5` o centro e `1` a base. As páginas de ambiente usam a prévia da foto de capa do ambiente. A home e o catálogo geral usam `assets/og.jpg`, definida em `"home_previa"` (foto e posição do corte). O gerador recria todas essas imagens a cada execução.
+
 ## Avaliações do Google
 
 A nota (5,0) e a quantidade (3 avaliações) estão escritas em `modelos/index.html`. Quando entrarem avaliações novas, atualize os números e rode o gerador.
