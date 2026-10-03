@@ -51,6 +51,8 @@ A nota (5,0) e a quantidade (3 avaliações) estão escritas em `modelos/index.h
 python -m http.server 4335
 ```
 
-## Antes de publicar
+## Publicação
 
-Preencha `"site"` em `dados/projetos.json` com o endereço completo (por exemplo `https://lordsplanejados.com.br`) e rode `python gerar.py`. Isso faz a prévia dos links no WhatsApp mostrar a foto de cada projeto e cria o `sitemap.xml`.
+O site está na Vercel, em https://lords-planejados.vercel.app/, ligado ao repositório https://github.com/isadelarge/lords. Cada envio para a branch `main` publica de novo automaticamente.
+
+O endereço também está em `"site"` no `dados/projetos.json`: é dele que saem as imagens de prévia do WhatsApp, o `og:url` e o `sitemap.xml`. Se o endereço mudar (um domínio próprio, por exemplo), troque esse campo, rode `python gerar.py` e envie. O WhatsApp guarda a prévia de links já enviados, então para testar use um link novo, como `https://lords-planejados.vercel.app/?v=2`.
