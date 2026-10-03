@@ -197,7 +197,7 @@ def gerar_home():
     ctx.update({
         'header_classe': 'header--over',
         'preload': '<link rel="preload" as="image" href="assets/fotos/dormitorios/grafite-cabeceira-1.jpg">',
-        'extra_head': ler('modelos/_schema.html'),
+        'extra_head': ler('modelos/_schema.html').replace('{{og_imagem}}', ctx['og_imagem']),
         'ambientes': ''.join(salas),
         'destaques': ''.join(feats),
         'img_arquitetos': img('assets/fotos/comercial/sala-reuniao-1.jpg', '', alt='Sala de reunião com painel amadeirado, mesa grafite e frisos de LED'),
